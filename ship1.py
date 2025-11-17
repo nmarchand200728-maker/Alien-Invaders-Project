@@ -11,6 +11,9 @@ class Ship:
 
         # Load the image and get its rect.
         self.image = pygame.image.load('images/ship.bmp')
+        # Rotate the ship to the right.
+        self.image = pygame.transform.rotate(self.image, -90)
+        
         self.rect = self.image.get_rect()
 
         # Start each new ship at the bottom center of the screen. 
@@ -39,4 +42,5 @@ class Ship:
     def blitme(self):
         """Draw the ship at its current location."""
         self.screen.blit(self.image, self.rect)
+
 
