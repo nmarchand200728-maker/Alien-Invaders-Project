@@ -1,3 +1,10 @@
+"""
+Program name: Lab12_nmarchand-1.py
+Author: Nathaniel Marchand
+Purpose: Copy of the alien invasion project with the ship rotated to the right. 
+Date: 11/17/25
+"""
+
 import sys
 
 import pygame
@@ -94,5 +101,6 @@ if __name__ == "__main__":
 
     ai = AlienInvasion()
     ai.run_game()
+
 
 
